@@ -1,34 +1,112 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# **NLW-Connect 2025**
 
-First, run the development server:
+Projeto desenvolvido durante o evento NLW-Connect 2025 da Rocketseat, com foco na criação de um sistema de indicação utilizando tecnologias modernas como React e Next.js.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+## 🚀 **Tecnologias Utilizadas**
+
+- React com Next.js
+- TypeScript
+- Vite
+- Tailwind CSS
+- PostCSS
+- React Hook Form + Zod
+- Orval para automação de requisições HTTP
+- Node.js
+- PostgreSQL com Docker
+- Redis
+- Biome para formatação e linting
+
+
+## ⚙️ **Funcionalidades Implementadas**
+
+#### 🔧 **Configuração Inicial**
+- Geração inicial com Next.js
+- Configuração do projeto com Vite + TypeScript
+- Integração do Tailwind CSS e Biome
+- Organização da estrutura do projeto
+- Criação dos primeiros componentes seguindo o Style Guide
+- Desenvolvimento da interface da página principal
+
+#### 🎨 **Componentização e Formulários**
+- Implementação do sistema de componentização
+- Criação da página de convite e seus componentes
+- Implementação do formulário de registro com React Hook Form
+- Validações utilizando Zod para melhor experiência do usuário
+
+#### 🔗 **Integração com Backend**
+- Geração de funções e tipagens do cliente HTTP com Orval
+- Criação de rota dinâmica no Next.js para obter o ID do inscrito via URL
+- Implementação do parâmetro de busca "referrer" para sistema de indicação
+- Uso do cliente HTTP para:  
+  ◦ Buscar e registrar dados no banco  
+  ◦ Exibir ranking de inscritos  
+  ◦ Gerar links de indicação  
+
+## 💻 **Exeçução**
+
+### **Back End**
+Para roda a aplicação é necessario o backend desenvolvido em outro curso. Portanto sera necessario algumas configuraçoes extras 
+
+**Repositorio do back-End:**
+  - https://github.com/rocketseat-education/nlw-connect-node
+**Passo a Passo**
+
+- Instale o Docker em seu computador
+
+- Clone este repositório
+
+```javascript
+git clone https://github.com/rocketseat-education/nlw-connect-node.git
+```
+- Instale as dependências
+```javascript
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Instale a virtuaçização Windos Linux do Docker
+```javascript
+wsl --install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Faça a criação das imagens do Docker
 
-## Learn More
+```javascript
+npm run db:migrate
+```
 
-To learn more about Next.js, take a look at the following resources:
+- Suba o Docker
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```javascript
+docker compose up -d  
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Execute a aplicação
+```javascript
+npm run dev
+```
 
-## Deploy on Vercel
+Apos rodar o programa a mensagem **HTTP server running!** deve aparecer em seu terminal se tudo ocorrer corretamente.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+### **Front End**
+Para esta etapa sera necessario o seguinte: 
+
+- Clone este repositório
+
+```javascript
+git clone https://github.com/Dyest/NLW-Connect__Projeto-React.git
+```
+- Instale as dependências
+```javascript
+npm install
+```
+
+- Execute a aplicação
+```javascript
+npm run dev
+```
+
+Apos rodar o programa a mensagem **GET / 200** deve aparecer em seu terminal se tudo ocorrer corretamente. Apois isto o projeto será iniciado em **http://localhost:3000.**
