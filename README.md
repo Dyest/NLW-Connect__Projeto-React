@@ -51,6 +51,7 @@ Para roda a aplicação é necessario o backend desenvolvido em outro curso. Por
 
 **Repositorio do back-End:**
   - https://github.com/rocketseat-education/nlw-connect-node
+    
 **Passo a Passo**
 
 - Instale o Docker em seu computador
